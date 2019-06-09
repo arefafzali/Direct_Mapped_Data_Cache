@@ -10,4 +10,4 @@ Contributors :
 
 Test :
 
-To test, put the test file in project directory and rename it as Adresses.txt.
+To test, put the test file in project directory and rename it as Addresses.txt.

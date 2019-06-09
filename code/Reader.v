@@ -4,7 +4,7 @@ module Reader(input clk, En, output reg [14:0] captured_data, output reg dataFin
 	`define NULL 0
 
 	initial begin
-	  data_file = $fopen("./Adresses.txt", "r");
+	  data_file = $fopen("./Addresses.txt", "r");
 	  if (data_file == `NULL) begin
 	    $display("data_file handle was NULL");
 	    $finish;

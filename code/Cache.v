@@ -29,12 +29,13 @@ module Cache(input clk, start, WE, forc, input [14:0] Adr, input [31:0] R1, R2, 
         end
 
         if(WE) begin
+            {tag, index} = Adr-(Adr%4);
             Registers[index] = {tag, 1'b 1, R1};
-            {tag, index} = {tag, index} + 1;
+            {tag, index} = Adr-(Adr%4)+1;
             Registers[index] = {tag, 1'b 1,R2};
-            {tag, index} = {tag, index} + 1;
+            {tag, index} = Adr-(Adr%4)+2;
             Registers[index] = {tag, 1'b 1,R3};
-            {tag, index} = {tag, index} + 1;
+            {tag, index} = Adr-(Adr%4)+3;
             Registers[index] = {tag, 1'b 1,R4};
             writed = 1;
         end
