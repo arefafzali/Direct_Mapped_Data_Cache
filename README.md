@@ -3,11 +3,11 @@ Computer Architecture - UT CE - Spring 2019
 
 make simple direct mapped data cache as a general propose Cashe memmory.
 
-Contributors :
+### Contributors :
 
  - Behzad Shayegh
- - Aref Afzali
+ - Aref Afzali [[+](https://github.com/arefafzali)]
 
-Test :
+### Test :
 
 To test, put the test file in project directory and rename it as Addresses.txt.
